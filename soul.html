@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soul.company Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background: #0f172a; color: #f8fafc; padding: 20px; text-align: center; }
+        .card { background: #1e293b; max-width: 600px; margin: 40px auto; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); border: 1px solid #334155; }
+        .logo { display: inline-flex; align-items: center; justify-content: center; width: 65px; height: 65px; background: linear-gradient(135deg, #38bdf8, #3b82f6); border-radius: 50%; font-weight: bold; font-size: 26px; color: #ffffff; margin-bottom: 20px; box-shadow: 0 0 15px rgba(56, 189, 248, 0.4); }
+        h1 { color: #38bdf8; margin-bottom: 10px; font-size: 2.2rem; }
+        p { color: #94a3b8; margin-bottom: 25px; }
+        .info { text-align: left; background: #0f172a; padding: 20px; border-radius: 8px; margin-bottom: 25px; border: 1px solid #1e293b; }
+        .info h3 { color: #38bdf8; margin-bottom: 12px; border-bottom: 1px solid #334155; padding-bottom: 6px; font-size: 1.1rem; }
+        .info ul { list-style: none; }
+        .info li { margin-bottom: 10px; font-size: 15px; color: #cbd5e1; }
+        .info li strong { color: #38bdf8; }
+        .btn { background: linear-gradient(135deg, #38bdf8, #3b82f6); color: #ffffff; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 1rem; transition: transform 0.2s; }
+        .btn:hover { transform: scale(1.03); }
+        #output { margin-top: 20px; color: #34d399; font-weight: bold; font-size: 1.1rem; min-height: 25px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Built-in CSS Crafted Logo Component -->
+        <div class="logo">UF</div>
+        <h1>Ungo Fidele</h1>
+        <p>A 16-year-old Web Developer from Gisozi, Kigali</p>
+        
+        <div class="info">
+            <h3>Academic Background</h3>
+            <ul>
+                <li><strong>A-Level:</strong> College Maranatha (Current)</li>
+                <li><strong>O-Level:</strong> GS APAPEC Murambi</li>
+                <li><strong>Primary School:</strong> Groupe Scolaire APACOPE</li>
+            </ul>
+        </div>
+
+        <!-- Embedded Engine Interaction -->
+        <button class="btn" onclick="revealMessage()">Activate Portfolio</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function revealMessage() {
+            document.getElementById('output').innerText = "🚀 Welcome! Web development engine initialized successfully.";
+        }
+    </script>
+</body>
+</html>
